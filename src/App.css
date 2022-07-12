@@ -15,6 +15,7 @@ body {
   height: 2 rem;
   justify-content: center;
   margin-right: auto;
+  white-space: nowrap;
 }
 
 .nav-logo-title a , h3{
@@ -28,4 +29,17 @@ body {
 
 .nav-link{
   margin: 0 0.5rem;
+}
+
+.ant-menu-item-selected {
+  background-color: #00c7bd !important;
+  border-radius: 10px;
+}
+
+.card-container{
+  min-height: 15rem !important;
+}
+
+.news-card-img{
+  border-radius: 3rem !important;
 }
