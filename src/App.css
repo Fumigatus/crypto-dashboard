@@ -36,10 +36,32 @@ body {
   border-radius: 10px;
 }
 
+.news-row{
+  display: flex;
+  justify-content: center;
+}
+
 .card-container{
   min-height: 15rem !important;
+  margin: 1rem;
+}
+
+.news-card{
+  border-radius: 30px !important;
+  border-color: pink !important;
+}
+
+.card-header-container{
+  display: flex;
 }
 
 .news-card-img{
-  border-radius: 3rem !important;
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+  margin-left: 1rem;
+}
+
+.news-desc{
+  margin-top: 0.5rem;
 }
