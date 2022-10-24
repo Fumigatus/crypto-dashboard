@@ -7,10 +7,11 @@ const { Title, Text } = Typography
 
 
 const Home = () => {
-  
+
 
   return (
     <>
+      <Title level={1}>News</Title>
       <News></News>
     </>
   )

@@ -25,6 +25,7 @@ const News = () => {
                 </a>
               </div>
               <p className='news-desc'>{news.description}</p>
+              <p className='news-date'> {news.provider[0].name} ⚫ {news.datePublished.substring(0,16).replace('T',' ')}</p>
             </Card>
           </Col>
         ))}

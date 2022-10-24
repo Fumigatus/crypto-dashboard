@@ -49,7 +49,7 @@ body {
 .news-card{
   border-radius: 30px !important;
   border-color: pink !important;
-  min-height: 15rem;
+  min-height: 16rem;
 }
 
 .card-header-container{
@@ -60,7 +60,7 @@ body {
   border-radius: 30px;
   width: 100px;
   height: 100px;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .news-desc{
@@ -69,4 +69,11 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.news-date{
+  position: absolute;
+  float: right;
+  right: 1rem;
+  bottom: 0;
 }
