@@ -83,3 +83,12 @@ body {
   height: 2rem;
   border-radius: 2rem;
 }
+
+.home-layout{
+  margin: 0 5rem;
+  background-color: white !important;
+}
+
+.home-stats{
+  margin-bottom: 2rem;
+}
