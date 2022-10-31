@@ -77,3 +77,9 @@ body {
   right: 1rem;
   bottom: 0;
 }
+
+.provider-img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}

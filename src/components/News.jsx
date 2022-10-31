@@ -1,8 +1,9 @@
+import { buildTimeValue } from '@testing-library/user-event/dist/utils'
 import { Card, Col, Row, Typography } from 'antd'
 import React from 'react'
 import { useGetCryptoNewsQuery } from '../services/newsApi'
 
-const { Title, Text } = Typography
+const { Title } = Typography
 
 const News = () => {
   const newsCategory = 'Cryptocurrency'
@@ -21,11 +22,11 @@ const News = () => {
                   <Title level={4}>{news.name}</Title>
                 </a>
                 <a href={news.url} target='_blank'>
-                  <img className='news-card-img' src={news.image.thumbnail.contentUrl} alt='new-img'></img>
+                  <img className='news-card-img' src={news.image ? news.image.thumbnail.contentUrl : 'https://cdn-icons-png.flaticon.com/512/3822/3822762.png'} alt='new-img'></img>
                 </a>
               </div>
               <p className='news-desc'>{news.description}</p>
-              <p className='news-date'> {news.provider[0].name} ⚫ {news.datePublished.substring(0,16).replace('T',' ')}</p>
+              <p className='news-date'><img className='provider-img' src={news.provider[0].image?news.provider[0].image.thumbnail.contentUrl:'https://cdn-icons-png.flaticon.com/512/3822/3822762.png'}/> - {news.provider[0].name}  ⚫ {news.datePublished.substring(0, 16).replace('T', ' ')}</p>
             </Card>
           </Col>
         ))}

@@ -18,13 +18,13 @@ const Navbar = () => {
                     </Title>
                 </div>
                 <Menu className='nav-menu' theme='dark'>
-                    <MenuItem>
+                    <MenuItem key={0}>
                         <Link className='nav-link' to='/'>Home</Link>
                     </MenuItem>
-                    <MenuItem>
+                    <MenuItem key={1}>
                         <Link className='nav-link' to='/cryptocurrencies'>Cryptocurrencies</Link>
                     </MenuItem>
-                    <MenuItem>
+                    <MenuItem key={2}>
                         <Link className='nav-link' to='/news'>News</Link>
                     </MenuItem>
                 </Menu>
