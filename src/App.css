@@ -60,7 +60,10 @@ body {
   border-radius: 30px;
   width: 100px;
   height: 100px;
-  margin-left: 3rem;
+}
+
+.news-card-img-link{
+  margin-left: auto;
 }
 
 .news-desc{

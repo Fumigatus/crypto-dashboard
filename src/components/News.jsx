@@ -21,7 +21,7 @@ const News = () => {
                 <a href={news.url} target='_blank'>
                   <Title level={4}>{news.name}</Title>
                 </a>
-                <a href={news.url} target='_blank'>
+                <a className='news-card-img-link'>
                   <img className='news-card-img' src={news.image ? news.image.thumbnail.contentUrl : 'https://cdn-icons-png.flaticon.com/512/3822/3822762.png'} alt='new-img'></img>
                 </a>
               </div>
